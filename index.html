@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم الإنجليزية مع دعاء السعيد</title>
+</head>
+<body>
+    <h1>مرحبًا بك في موقع تعلم الإنجليزية!</h1>
+    <p>اضغط على أي كلمة لسماع نطقها.</p>
+
+    <ul>
+        <li><button onclick="speak('Hello')">Hello - مرحبًا</button></li>
+        <li><button onclick="speak('Good morning')">Good morning - صباح الخير</button></li>
+        <li><button onclick="speak('Apple')">Apple - تفاحة</button></li>
+        <li><button onclick="speak('Thank you')">Thank you - شكرًا لك</button></li>
+    </ul>
+
+    <script>
+        function speak(text) {
+            let speech = new SpeechSynthesisUtterance(text);
+            speech.lang = "en-US"; // تحديد اللغة الإنجليزية
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+</body>
+</html>
