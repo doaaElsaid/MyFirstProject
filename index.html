@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تعلم الإنجليزية مع دعاء السعيد</title>
+    <title>Learn English with Doaa Elsaid</title>
 </head>
 <body>
-    <h1>مرحبًا بك في موقع تعلم الإنجليزية!</h1>
+    <h1>مرحبًا بك في موقع تعلم الإنجليزية مع <span style="color:blue;">Doaa Elsaid</span>!</h1>
     <p>اضغط على أي كلمة لسماع نطقها.</p>
 
     <ul>
-        <li><button onclick="speak('Hello')">Hello - مرحبًا</button></li>
-        <li><button onclick="speak('Good morning')">Good morning - صباح الخير</button></li>
-        <li><button onclick="speak('Apple')">Apple - تفاحة</button></li>
-        <li><button onclick="speak('Thank you')">Thank you - شكرًا لك</button></li>
+        <li><button onclick="speak('Meticulous')">Meticulous - شديد الدقة</button></li>
+        <li><button onclick="speak('Ephemeral')">Ephemeral - سريع الزوال</button></li>
+        <li><button onclick="speak('Serendipity')">Serendipity - صدفة سعيدة</button></li>
+        <li><button onclick="speak('Pernicious')">Pernicious - مدمر / خبيث</button></li>
+        <li><button onclick="speak('Ineffable')">Ineffable - لا يوصف</button></li>
+        <li><button onclick="speak('Quintessential')">Quintessential - مثالي / جوهري</button></li>
+        <li><button onclick="speak('Ubiquitous')">Ubiquitous - منتشر في كل مكان</button></li>
+        <li><button onclick="speak('Obfuscate')">Obfuscate - يعقد / يربك</button></li>
+        <li><button onclick="speak('Pulchritudinous')">Pulchritudinous - رائع الجمال</button></li>
+        <li><button onclick="speak('Recalcitrant')">Recalcitrant - عنيد / متمرد</button></li>
+        <li><button onclick="speak('Lugubrious')">Lugubrious - كئيب / حزين جدًا</button></li>
+        <li><button onclick="speak('Ebullient')">Ebullient - مفعم بالحيوية</button></li>
+        <li><button onclick="speak('Sagacious')">Sagacious - حكيم / فطن</button></li>
+        <li><button onclick="speak('Cacophony')">Cacophony - ضوضاء مزعجة</button></li>
+        <li><button onclick="speak('Sycophant')">Sycophant - متملق / منافق</button></li>
+        <li><button onclick="speak('Esoteric')">Esoteric - غامض / خاص بفئة معينة</button></li>
+        <li><button onclick="speak('Juxtaposition')">Juxtaposition - مقارنة بين شيئين متضادين</button></li>
+        <li><button onclick="speak('Supercilious')">Supercilious - متعجرف / متكبر</button></li>
+        <li><button onclick="speak('Nefarious')">Nefarious - شرير / خبيث</button></li>
+        <li><button onclick="speak('Insidious')">Insidious - غادر / خادع</button></li>
     </ul>
 
     <script>
         function speak(text) {
             let speech = new SpeechSynthesisUtterance(text);
-            speech.lang = "en-US"; // تحديد اللغة الإنجليزية
+            speech.lang = "en-US"; // اللغة الإنجليزية الأمريكية
             window.speechSynthesis.speak(speech);
         }
     </script>
