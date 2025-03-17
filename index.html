@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn English with Wisam Ashraf Abdelrahman</title>
+    <title>Learn English with Doaa Elsaid Ahmed</title>
     <style>
-        /* تنسيق الصفحة */
+        /* تنسيق عام */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
-            background: linear-gradient(to right, #ff7eb3, #ff758c);
+            background: linear-gradient(to right, #1e3c72, #2a5298);
             color: #fff;
             margin: 0;
             padding: 0;
@@ -19,71 +19,99 @@
         h1 {
             margin-top: 20px;
             font-size: 32px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             margin-bottom: 20px;
-            font-weight: bold;
         }
 
-        /* تنسيق القائمة */
-        ul {
-            list-style: none;
-            padding: 0;
+        /* تنسيق صندوق الكلمات */
+        .word-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 12px;
+            max-width: 80%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         /* تنسيق الأزرار */
         button {
-            background: rgba(255, 255, 255, 0.9);
-            color: #d90429;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
             border: none;
-            padding: 14px 22px;
-            font-size: 18px;
+            padding: 15px 22px;
+            font-size: 16px;
             font-weight: bold;
             cursor: pointer;
             border-radius: 8px;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease-in-out;
+            text-transform: capitalize;
         }
 
         button:hover {
-            background-color: #d90429;
-            color: #fff;
-            transform: scale(1.08);
+            background: linear-gradient(to right, #feb47b, #ff7e5f);
+            transform: scale(1.1);
         }
+
+        button:active {
+            background: linear-gradient(to right, #ff5e62, #ff9966);
+            transform: scale(0.95);
+        }
+
+        /* تفاعل عند النقر */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>مرحبًا بك في موقع تعلم الإنجليزية مع <span style="color:yellow;">Wisam Ashraf Abdelrahman</span>!</h1>
+
+    <h1>مرحبًا بك في موقع تعلم الإنجليزية مع <span style="color:yellow;">Doaa Elsaid Ahmed</span>!</h1>
     <p>اضغط على أي كلمة لسماع نطقها.</p>
 
-    <ul>
-        <li><button onclick="speak('Exquisite')">Exquisite - رائع الجمال</button></li>
-        <li><button onclick="speak('Resilient')">Resilient - مرن / قادر على التكيف</button></li>
-        <li><button onclick="speak('Benevolent')">Benevolent - كريم / محسن</button></li>
-        <li><button onclick="speak('Melancholy')">Melancholy - حزين / كئيب</button></li>
-        <li><button onclick="speak('Lucid')">Lucid - واضح / سهل الفهم</button></li>
-        <li><button onclick="speak('Eloquent')">Eloquent - بليغ / فصيح</button></li>
-        <li><button onclick="speak('Inevitable')">Inevitable - لا مفر منه</button></li>
-        <li><button onclick="speak('Omnipotent')">Omnipotent - كلي القدرة</button></li>
-        <li><button onclick="speak('Vivacious')">Vivacious - مفعم بالحياة</button></li>
-        <li><button onclick="speak('Quirky')">Quirky - غريب الأطوار</button></li>
-        <li><button onclick="speak('Glistening')">Glistening - لامع / متألق</button></li>
-        <li><button onclick="speak('Ambiguous')">Ambiguous - غامض / مبهم</button></li>
-        <li><button onclick="speak('Whimsical')">Whimsical - خيالي / غريب</button></li>
-        <li><button onclick="speak('Labyrinthine')">Labyrinthine - متشابك / معقد</button></li>
-        <li><button onclick="speak('Halcyon')">Halcyon - هادئ / مسالم</button></li>
-        <li><button onclick="speak('Ethereal')">Ethereal - سماوي / شفاف</button></li>
-        <li><button onclick="speak('Mirthful')">Mirthful - مبهج / مليء بالفرح</button></li>
-        <li><button onclick="speak('Harmonious')">Harmonious - متناسق / منسجم</button></li>
-        <li><button onclick="speak('Astonishing')">Astonishing - مدهش / مذهل</button></li>
-    </ul>
+    <div class="word-container">
+        <button onclick="speak('Meticulous')">Meticulous - شديد الدقة</button>
+        <button onclick="speak('Ephemeral')">Ephemeral - سريع الزوال</button>
+        <button onclick="speak('Serendipity')">Serendipity - صدفة سعيدة</button>
+        <button onclick="speak('Pernicious')">Pernicious - مدمر / خبيث</button>
+        <button onclick="speak('Ineffable')">Ineffable - لا يوصف</button>
+        <button onclick="speak('Ubiquitous')">Ubiquitous - منتشر في كل مكان</button>
+        <button onclick="speak('Obfuscate')">Obfuscate - يعقد / يربك</button>
+        <button onclick="speak('Pulchritudinous')">Pulchritudinous - رائع الجمال</button>
+        <button onclick="speak('Recalcitrant')">Recalcitrant - عنيد / متمرد</button>
+        <button onclick="speak('Lugubrious')">Lugubrious - كئيب / حزين جدًا</button>
+        <button onclick="speak('Ebullient')">Ebullient - مفعم بالحيوية</button>
+        <button onclick="speak('Sagacious')">Sagacious - حكيم / فطن</button>
+        <button onclick="speak('Cacophony')">Cacophony - ضوضاء مزعجة</button>
+        <button onclick="speak('Sycophant')">Sycophant - متملق / منافق</button>
+        <button onclick="speak('Esoteric')">Esoteric - غامض / خاص بفئة معينة</button>
+        <button onclick="speak('Juxtaposition')">Juxtaposition - مقارنة بين شيئين متضادين</button>
+        <button onclick="speak('Supercilious')">Supercilious - متعجرف / متكبر</button>
+        <button onclick="speak('Nefarious')">Nefarious - شرير / خبيث</button>
+        <button onclick="speak('Insidious')">Insidious - غادر / خادع</button>
+        <button onclick="speak('Obsequious')">Obsequious - متزلف / متملق</button>
+        <button onclick="speak('Mellifluous')">Mellifluous - عذب / جميل النغمة</button>
+        <button onclick="speak('Irascible')">Irascible - سريع الغضب</button>
+        <button onclick="speak('Garrulous')">Garrulous - كثير الكلام / ثرثار</button>
+        <button onclick="speak('Hapless')">Hapless - قليل الحظ / منحوس</button>
+        <button onclick="speak('Zephyr')">Zephyr - نسيم لطيف</button>
+        <button onclick="speak('Ethereal')">Ethereal - سماوي / خفيف</button>
+        <button onclick="speak('Discombobulated')">Discombobulated - مشوش / مضطرب</button>
+        <button onclick="speak('Perspicacious')">Perspicacious - ثاقب الفكر / فطن</button>
+    </div>
 
     <script>
         function speak(text) {
@@ -96,5 +124,6 @@
             }
         }
     </script>
+
 </body>
 </html>
