@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn English with Doaa Elsaid Ahmed</title>
+    <title>Learn English with Doaa Elsaeed Ahmed</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -78,7 +78,6 @@
     <p>اضغط على أي كلمة لسماع نطقها.</p>
 
     <div class="word-container">
-        <!-- أكثر من 200 كلمة مفيدة ومنوعة -->
         <script>
             let words = [
                 "Meticulous - شديد الدقة", "Ephemeral - سريع الزوال", "Serendipity - صدفة سعيدة",
@@ -89,48 +88,40 @@
                 "Superfluous - زائد / غير ضروري", "Quintessential - جوهري / مثالي", "Plethora - وفرة / كثرة",
                 "Auspicious - مبشر بالخير", "Capricious - متقلب / متغير", "Equanimity - هدوء / رباطة جأش",
                 "Sycophant - متملق / منافق", "Esoteric - غامض / مقصور على فئة معينة", "Sagacious - حكيم / ذكي",
-                "Zephyr - نسيم خفيف", "Ebullient - متحمس / مبتهج", "Cacophony - ضوضاء / نشاز",
-                "Misanthrope - كاره للبشر", "Parsimonious - بخيل / مقتصد", "Ostentatious - متباهٍ / متفاخر",
-                "Resplendent - متألق / مشرق", "Cognizant - مدرك / واعي", "Circumspect - حذر / متأنٍ",
-                "Garrulous - كثير الكلام", "Lethargic - خامل / كسول", "Munificent - كريم / سخي",
-                "Obstreperous - صاخب / مزعج", "Pusillanimous - جبان / ضعيف", "Reverence - احترام / تقديس",
-                "Soporific - منوم / ممل", "Tenacious - عنيد / صامد", "Unfathomable - غامض / غير مفهوم",
-                "Vociferous - صاخب / عالي الصوت", "Whimsical - غريب الأطوار / غير متوقع",
-                "Zealous - متحمس / متفانٍ", "Chicanery - مكر / خداع", "Didactic - تعليمي / توجيهي",
-                "Ebullience - حماس / فرح مفرط", "Fortuitous - عرضي / محظوظ", "Gregarious - اجتماعي / ودود",
-                "Hapless - تعيس / سيئ الحظ", "Iconoclast - متمرد / محطم التقاليد", "Juxtaposition - مقارنة متجاورة",
-                "Kaleidoscope - متغير الألوان / متنوع", "Lackadaisical - كسول / متهاون", "Maverick - مستقل / غير تقليدي",
-                "Nebulous - غامض / غير واضح", "Ostensible - ظاهري / مزعوم", "Perspicacious - ذكي / فطن",
-                "Quixotic - مثالي بشكل غير واقعي", "Redolent - عبق / معطر", "Stentorian - صوت عالٍ جدًا",
-                "Trepidation - خوف / ارتباك", "Uxoricide - قتل الزوجة", "Vitriolic - لاذع / قاسي",
-                "Winsome - جذاب / فاتن", "Xenophobic - كاره للأجانب", "Yen - رغبة شديدة",
-                "Zephyr - نسيم خفيف", "Belligerent - عدواني / محارب", "Charlatan - دجال / محتال",
-                "Decorous - لائق / مهذب", "Effervescent - فوّار / مفعم بالحيوية", "Flummoxed - مرتبك / مذهول"
+                "Zephyr - نسيم عليل", "Halcyon - هادئ / مزدهر", "Resplendent - متألق / رائع",
+                "Ebullient - مفعم بالحيوية", "Evanescent - زائل / سريع التلاشي", "Diaphanous - شفاف / رقيق",
+                "Reverie - حلم يقظة", "Penumbra - ظل خفيف", "Cynosure - محط الأنظار",
+                "Redolent - يفوح برائحة", "Susurrus - همهمة / حفيف", "Dulcet - عذب / مريح",
+                "Propinquity - قرب / مجاورة", "Peregrinate - يسافر / يطوف", "Aesthete - محب للجمال",
+                "Demure - محتشم / خجول", "Sonorous - جهوري / رنان", "Lissome - رشيق / لين",
+                "Mirth - مرح / بهجة", "Harbinger - نذير / بشير", "Gossamer - خفيف / رقيق جدًا",
+                "Epiphany - لحظة إدراك", "Laconic - مقتضب / موجز", "Sanguine - متفائل / مرح",
+                "Quixotic - مثالي جدًا", "Susceptible - حساس / عرضة لـ", "Incandescent - متوهج / مشرق",
+                "Ineffaceable - لا يُمحى", "Limerence - افتتان عاطفي", "Obstreperous - مشاغب / صاخب",
+                "Ebullience - فوران / حماس", "Labyrinthine - معقد / متشابك", "Refulgent - متألق / مشع",
+                "Nebulous - غامض / ضبابي", "Transient - عابر / مؤقت", "Ephemeral - سريع الزوال",
+                "Solitude - وحدة / عزلة", "Inept - غير كفء", "Incorrigible - لا يمكن إصلاحه",
+                "Hapless - سيئ الحظ", "Ethereal - سماوي / رقيق", "Disparate - متباين / مختلف",
+                "Belligerent - عدواني / محارب", "Effulgent - مشرق / متألق", "Felicitous - مناسب / ملائم",
+                "Avaricious - طماع / جشع", "Idyllic - شاعري / جميل", "Proclivity - ميل / نزعة",
+                "Mellifluous - عذب / سلس", "Perfidious - غادر / خائن", "Cacophony - ضوضاء / نشاز",
+                "Impetuous - متهور / متسرع", "Oblivious - غير مدرك", "Unctuous - متملق / زيتي",
+                "Vociferous - صاخب / مجاهر", "Mawkish - عاطفي بشكل مبالغ", "Insipid - باهت / ممل"
             ];
 
-            let container = document.querySelector('.word-container');
-
             words.forEach(word => {
-                let button = document.createElement('button');
-                button.textContent = word;
-                button.onclick = function () { speak(word.split(" - ")[0], this); };
-                container.appendChild(button);
+                let btn = document.createElement("button");
+                btn.textContent = word;
+                btn.onclick = function() {
+                    let speech = new SpeechSynthesisUtterance(word.split(" - ")[0]);
+                    speech.lang = "en-US";
+                    window.speechSynthesis.speak(speech);
+
+                    document.querySelectorAll("button").forEach(b => b.classList.remove("glow"));
+                    btn.classList.add("glow");
+                };
+                document.querySelector(".word-container").appendChild(btn);
             });
-
-            let lastClickedButton = null;
-
-            function speak(text, button) {
-                let speech = new SpeechSynthesisUtterance(text);
-                speech.lang = "en-US";
-                window.speechSynthesis.speak(speech);
-
-                if (lastClickedButton) {
-                    lastClickedButton.classList.remove('glow');
-                }
-
-                button.classList.add('glow');
-                lastClickedButton = button;
-            }
         </script>
     </div>
 
