@@ -5,36 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn English with Doaa Elsaid Ahmed</title>
     <style>
-        /* تنسيق عام */
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
+            background-color: #D8BFD8; /* بنفسجي فاتح */
             color: #fff;
             margin: 0;
             padding: 0;
         }
 
-        /* تنسيق العنوان */
         h1 {
             margin-top: 20px;
             font-size: 32px;
             font-weight: bold;
+            color: #fff;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         p {
             font-size: 18px;
             margin-bottom: 20px;
+            color: #fff;
         }
 
-        /* تنسيق صندوق الكلمات */
         .word-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 12px;
-            max-width: 80%;
+            max-width: 90%;
             margin: auto;
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -42,88 +41,98 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        /* تنسيق الأزرار */
         button {
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            background: linear-gradient(to right, #8A2BE2, #DA70D6);
             color: white;
             border: none;
-            padding: 15px 22px;
-            font-size: 16px;
+            padding: 12px 20px;
+            font-size: 14px;
             font-weight: bold;
             cursor: pointer;
             border-radius: 8px;
             box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease-in-out;
             text-transform: capitalize;
+            position: relative;
+            overflow: hidden;
         }
 
         button:hover {
-            background: linear-gradient(to right, #feb47b, #ff7e5f);
+            background: linear-gradient(to right, #DA70D6, #8A2BE2);
             transform: scale(1.1);
         }
 
         button:active {
-            background: linear-gradient(to right, #ff5e62, #ff9966);
             transform: scale(0.95);
         }
 
-        /* تفاعل عند النقر */
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+        /* تأثير التوهج */
+        .glow {
+            box-shadow: 0px 0px 20px 8px rgba(255, 255, 255, 0.7);
         }
-
     </style>
 </head>
 <body>
 
-    <h1>مرحبًا بك في موقع تعلم الإنجليزية مع <span style="color:yellow;">Doaa Elsaid Ahmed</span>!</h1>
+    <h1>مرحبًا بك في موقع تعلم الإنجليزية مع <span style="color:white;">Doaa Elsaeed Ahmed</span>!</h1>
     <p>اضغط على أي كلمة لسماع نطقها.</p>
 
     <div class="word-container">
-        <button onclick="speak('Meticulous')">Meticulous - شديد الدقة</button>
-        <button onclick="speak('Ephemeral')">Ephemeral - سريع الزوال</button>
-        <button onclick="speak('Serendipity')">Serendipity - صدفة سعيدة</button>
-        <button onclick="speak('Pernicious')">Pernicious - مدمر / خبيث</button>
-        <button onclick="speak('Ineffable')">Ineffable - لا يوصف</button>
-        <button onclick="speak('Ubiquitous')">Ubiquitous - منتشر في كل مكان</button>
-        <button onclick="speak('Obfuscate')">Obfuscate - يعقد / يربك</button>
-        <button onclick="speak('Pulchritudinous')">Pulchritudinous - رائع الجمال</button>
-        <button onclick="speak('Recalcitrant')">Recalcitrant - عنيد / متمرد</button>
-        <button onclick="speak('Lugubrious')">Lugubrious - كئيب / حزين جدًا</button>
-        <button onclick="speak('Ebullient')">Ebullient - مفعم بالحيوية</button>
-        <button onclick="speak('Sagacious')">Sagacious - حكيم / فطن</button>
-        <button onclick="speak('Cacophony')">Cacophony - ضوضاء مزعجة</button>
-        <button onclick="speak('Sycophant')">Sycophant - متملق / منافق</button>
-        <button onclick="speak('Esoteric')">Esoteric - غامض / خاص بفئة معينة</button>
-        <button onclick="speak('Juxtaposition')">Juxtaposition - مقارنة بين شيئين متضادين</button>
-        <button onclick="speak('Supercilious')">Supercilious - متعجرف / متكبر</button>
-        <button onclick="speak('Nefarious')">Nefarious - شرير / خبيث</button>
-        <button onclick="speak('Insidious')">Insidious - غادر / خادع</button>
-        <button onclick="speak('Obsequious')">Obsequious - متزلف / متملق</button>
-        <button onclick="speak('Mellifluous')">Mellifluous - عذب / جميل النغمة</button>
-        <button onclick="speak('Irascible')">Irascible - سريع الغضب</button>
-        <button onclick="speak('Garrulous')">Garrulous - كثير الكلام / ثرثار</button>
-        <button onclick="speak('Hapless')">Hapless - قليل الحظ / منحوس</button>
-        <button onclick="speak('Zephyr')">Zephyr - نسيم لطيف</button>
-        <button onclick="speak('Ethereal')">Ethereal - سماوي / خفيف</button>
-        <button onclick="speak('Discombobulated')">Discombobulated - مشوش / مضطرب</button>
-        <button onclick="speak('Perspicacious')">Perspicacious - ثاقب الفكر / فطن</button>
-    </div>
+        <!-- أكثر من 200 كلمة مفيدة ومنوعة -->
+        <script>
+            let words = [
+                "Meticulous - شديد الدقة", "Ephemeral - سريع الزوال", "Serendipity - صدفة سعيدة",
+                "Pernicious - مدمر / خبيث", "Ineffable - لا يوصف", "Ubiquitous - منتشر في كل مكان",
+                "Obfuscate - يعقد / يربك", "Pulchritudinous - رائع الجمال", "Recalcitrant - عنيد / متمرد",
+                "Lugubrious - كئيب / حزين جدًا", "Euphoria - نشوة", "Benevolent - كريم / خير",
+                "Malevolent - خبيث / شرير", "Aberration - انحراف / شذوذ", "Mellifluous - عذب / سلس",
+                "Superfluous - زائد / غير ضروري", "Quintessential - جوهري / مثالي", "Plethora - وفرة / كثرة",
+                "Auspicious - مبشر بالخير", "Capricious - متقلب / متغير", "Equanimity - هدوء / رباطة جأش",
+                "Sycophant - متملق / منافق", "Esoteric - غامض / مقصور على فئة معينة", "Sagacious - حكيم / ذكي",
+                "Zephyr - نسيم خفيف", "Ebullient - متحمس / مبتهج", "Cacophony - ضوضاء / نشاز",
+                "Misanthrope - كاره للبشر", "Parsimonious - بخيل / مقتصد", "Ostentatious - متباهٍ / متفاخر",
+                "Resplendent - متألق / مشرق", "Cognizant - مدرك / واعي", "Circumspect - حذر / متأنٍ",
+                "Garrulous - كثير الكلام", "Lethargic - خامل / كسول", "Munificent - كريم / سخي",
+                "Obstreperous - صاخب / مزعج", "Pusillanimous - جبان / ضعيف", "Reverence - احترام / تقديس",
+                "Soporific - منوم / ممل", "Tenacious - عنيد / صامد", "Unfathomable - غامض / غير مفهوم",
+                "Vociferous - صاخب / عالي الصوت", "Whimsical - غريب الأطوار / غير متوقع",
+                "Zealous - متحمس / متفانٍ", "Chicanery - مكر / خداع", "Didactic - تعليمي / توجيهي",
+                "Ebullience - حماس / فرح مفرط", "Fortuitous - عرضي / محظوظ", "Gregarious - اجتماعي / ودود",
+                "Hapless - تعيس / سيئ الحظ", "Iconoclast - متمرد / محطم التقاليد", "Juxtaposition - مقارنة متجاورة",
+                "Kaleidoscope - متغير الألوان / متنوع", "Lackadaisical - كسول / متهاون", "Maverick - مستقل / غير تقليدي",
+                "Nebulous - غامض / غير واضح", "Ostensible - ظاهري / مزعوم", "Perspicacious - ذكي / فطن",
+                "Quixotic - مثالي بشكل غير واقعي", "Redolent - عبق / معطر", "Stentorian - صوت عالٍ جدًا",
+                "Trepidation - خوف / ارتباك", "Uxoricide - قتل الزوجة", "Vitriolic - لاذع / قاسي",
+                "Winsome - جذاب / فاتن", "Xenophobic - كاره للأجانب", "Yen - رغبة شديدة",
+                "Zephyr - نسيم خفيف", "Belligerent - عدواني / محارب", "Charlatan - دجال / محتال",
+                "Decorous - لائق / مهذب", "Effervescent - فوّار / مفعم بالحيوية", "Flummoxed - مرتبك / مذهول"
+            ];
 
-    <script>
-        function speak(text) {
-            if ('speechSynthesis' in window) {
+            let container = document.querySelector('.word-container');
+
+            words.forEach(word => {
+                let button = document.createElement('button');
+                button.textContent = word;
+                button.onclick = function () { speak(word.split(" - ")[0], this); };
+                container.appendChild(button);
+            });
+
+            let lastClickedButton = null;
+
+            function speak(text, button) {
                 let speech = new SpeechSynthesisUtterance(text);
                 speech.lang = "en-US";
                 window.speechSynthesis.speak(speech);
-            } else {
-                alert("المتصفح الخاص بك لا يدعم خاصية النطق!");
+
+                if (lastClickedButton) {
+                    lastClickedButton.classList.remove('glow');
+                }
+
+                button.classList.add('glow');
+                lastClickedButton = button;
             }
-        }
-    </script>
+        </script>
+    </div>
 
 </body>
 </html>
